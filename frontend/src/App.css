@@ -2,8 +2,8 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.App-scholarship {
+  height: 75vmin;
   pointer-events: none;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: white;
 }
 
 @keyframes App-logo-spin {
