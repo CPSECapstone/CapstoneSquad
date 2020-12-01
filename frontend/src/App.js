@@ -38,6 +38,20 @@ function ToggleGroup() {
 };
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { backendResponse: "" };
+  }
+
+  callBackend() {
+      fetch("http://localhost:9000/testBackend")
+          .then(res => res.text())
+          .then(res => this.setState({ backendResponse: res }));
+  }
+
+  componentWillMount() {
+      this.callBackend();
+  }
   render() {
     return (
       <div className="App">
@@ -53,8 +67,7 @@ class App extends Component {
         }}
       </ToggleGroup>
           <img src={scholarship} className="App-scholarship" alt="scholarship" />
-          <p>
-          </p>
+          <p className="App-intro">{this.state.backendResponse}</p>
           <a>
             Calm Your Thoughts With Tater Tots
           </a>
