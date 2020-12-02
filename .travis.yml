@@ -1,9 +1,11 @@
-before_install: 
-  - "cd frontend"
 language: node_js
 node_js: 
-  - stable
+  - node
+before_install:
+  - cd frontend
 script: 
-  - npm run build
   - npm test
+
+
+
 
