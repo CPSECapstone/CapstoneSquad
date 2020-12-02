@@ -2,3 +2,5 @@
 Cal Poly Senior Capstone project. Creating the digital annotation tool for Creative Works at the Kennedy Library.
 
 **Run npm install when pulling this repo for the first time to install the node modules necessary for the project.**
+
+Continuous Integration Server: https://travis-ci.com/github/CPSECapstone/CapstoneSquad/builds/205978389
