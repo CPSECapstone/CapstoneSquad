@@ -9,10 +9,12 @@ Built using:
 ## Packages to be Installed Before Pulling this Repo
 1. Install Node if not already installed:
    > `npm install`
+   
 To run the project:
    > `npm start`
 2. Install the Cypress Frontend testing framework:
    > `npm install cypress --save-dev`
+   
 To run Cypress testing:  
    > `npx cypress open`
 
