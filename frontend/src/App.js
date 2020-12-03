@@ -35,8 +35,7 @@ function ToggleGroup() {
       ))}
     </ButtonGroup>
   );
-};
-
+}
 class App extends Component {
   constructor(props) {
     super(props);
