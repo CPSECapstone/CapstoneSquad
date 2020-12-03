@@ -11,12 +11,12 @@ Built using:
    > `npm install`
    
 To run the project:
-      > `npm start`
+   > `npm start`
 2. Install the Cypress Frontend testing framework:
    > `npm install cypress --save-dev`
    
 To run Cypress testing:  
-      > `npx cypress open`
+   > `npx cypress open`
 
 The frontend/client is being run on http://localhost:3000 
 The backend is the Express.js, being run on http://localhost:9000
