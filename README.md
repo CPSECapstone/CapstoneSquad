@@ -9,11 +9,11 @@ Built using:
 ## Packages to be Installed Before Pulling this Repo
 1. Install Node if not already installed:
    > `npm install`
-   To run:
+   
    > `npm start`
 2. Install the Cypress Frontend testing framework:
    > `npm install cypress --save-dev`
-   To run Cypress:
+   
    > `npx cypress open`
 
 The frontend/client is being run on http://localhost:3000 
