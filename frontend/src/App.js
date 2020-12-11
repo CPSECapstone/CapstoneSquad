@@ -2,56 +2,82 @@ import React, { useState } from 'react';
 import scholarship from './scholarship.jpg';
 import './App.css';
 import styled, { css } from 'styled-components';
+import redo from './redo.jpg'
+import undo from './undo.jpg'
+import text from './text.jpg'
+import draw from './draw.jpg'
+import highlight from './highlight.jpg'
+import erase from './erase.jpg'
 
 
-const Button = styled.button`
-  /* Same as above */
-`;
+const Button = styled.button``;
+
 const ButtonToggle = styled(Button)`
-  opacity: 0.6;
+  opacity: 10;
   ${({ active }) =>
-    active &&
-    `
-    opacity: 1;
-  `}
+    active && `opacity: 100;`}
 `;
-const ButtonGroup = styled.div`
-  display: flex;
-`;
-const types = ['Redo', 'Undo', 'Annotate'];
-function ToggleGroup() {
-  const [active, setActive] = useState(types[0]);
-  return (
-    <ButtonGroup>
-      {types.map(type => (
-        <ButtonToggle
-          key={type}
-          active={active === type}
-          onClick={() => setActive(type)}
-        >
-          {type}
-        </ButtonToggle>
-      ))}
-    </ButtonGroup>
-  );
-}
+
+const ButtonGroup = styled.div` `;
+
+
 function App() {
-  const [active, setActive] = useState(types[0]);
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <ButtonGroup>
-      {types.map(type => (
-        <ButtonToggle
-          key={type}
-          active={active === type}
-          onClick={() => setActive(type)}
-        >
-          {type}
+     
+      <header className="App-TopButton"> 
+        <ButtonGroup> 
+        <ButtonToggle>
+        <img src={redo} className="App-buttons" />
         </ButtonToggle>
-      ))}
+        <ButtonToggle>
+        <img src={undo} className="App-buttons"/>
+        </ButtonToggle>
     </ButtonGroup>
-        
+    </header>
+
+    <header className="App-RightButton"> 
+        <ButtonGroup> 
+        <ButtonToggle>
+        <img src={text} className="App-buttons" />
+        </ButtonToggle>
+    </ButtonGroup>
+    </header>
+
+    <header className="App-SecondRightButton"> 
+        <ButtonGroup> 
+        <ButtonToggle>
+        <img src={draw} className="App-buttons" />
+        </ButtonToggle>
+    </ButtonGroup>
+    </header>
+
+    <header className="App-ThirdRightButton"> 
+        <ButtonGroup> 
+        <ButtonToggle>
+        <img src={highlight} className="App-buttons" />
+        </ButtonToggle>
+    </ButtonGroup>
+    </header>
+
+    <header className="App-FourthRightButton"> 
+        <ButtonGroup> 
+        <ButtonToggle>
+        <img src={erase} className="App-buttons" />
+        </ButtonToggle>
+    </ButtonGroup>
+    </header>
+
+    <div className="App"></div>
+
+    
+
+
+
+
+
+    <header className="App-header">
         <img src={scholarship} className="App-scholarship" alt="scholarship" />
         <p>
         </p>

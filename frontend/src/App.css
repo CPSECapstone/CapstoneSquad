@@ -24,6 +24,75 @@
   color: white;
 }
 
+.App-TopButton {
+  background-color: #282c34;
+  position: absolute;
+  right: 28.8%;
+  top: 1.38%;
+  font-size: calc(0px + 0vmin);
+  color: black;
+  
+}
+
+.App-RightButton {
+  background-color: #282c34;
+  position: absolute;
+  right: 23.71%;
+  top: 13.7%;
+  font-size: calc(0px + 0vmin);
+  color: black;
+  
+}
+
+.App-SecondRightButton {
+  background-color: #282c34;
+  position: absolute;
+  right: 23.71%;
+  top: 20.0%;
+  font-size: calc(0px + 0vmin);
+  color: black;
+  
+}
+
+.App-ThirdRightButton {
+  background-color: #282c34;
+  position: absolute;
+  right: 23.71%;
+  top: 26.3%;
+  font-size: calc(0px + 0vmin);
+  color: black;
+  
+}
+
+.App-FourthRightButton {
+  background-color: #282c34;
+  position: absolute;
+  right: 23.71%;
+  top: 32.6%;
+  font-size: calc(0px + 0vmin);
+  color: black;
+  
+}
+
+
+
+
+
+.App-buttons {
+  background-color: #282c34;
+  height: 50px;
+  width: 50px;
+  
+
+  
+  font-size: calc(0px + 0vmin);
+  color: black;
+
+  
+}
+
+
+
 .App-link {
   color: white;
 }
