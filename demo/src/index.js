@@ -1,4 +1,4 @@
-
+{/* From the Canvas API */}
 import React, { Component } from "react";
 import { render } from "react-dom";
 import Scholarship from './Scholarship.jpg';
@@ -8,9 +8,11 @@ import Clear from './Clear.jpg'
 import CanvasDraw from "../../src";
 import classNames from "./index.css";
 
+
+
 class Demo extends Component {
   state = {
-    color: "#ffc600",
+    color: "#237d16",
     width: 400,
     height: 400,
     brushRadius: 10,
@@ -21,14 +23,8 @@ class Demo extends Component {
     return (
       <div>
        
-        <h2>Save & Load</h2>
-        <p>
-          This part got me most excited. Very easy to use saving and loading of
-          drawings. It even comes with a customizable loading speed to control
-          whether your drawing should load instantly (loadTimeOffset = 0) or
-          appear after some time (loadTimeOffset > 0)
-          <span>{`<CanvasDraw loadTimeOffset={10} />`}</span>
-        </p>
+        <h2>Scholarship Annotator</h2>
+       
         <p>Try it out! Draw something, hit "Save" and then "Load".</p>
         <div className={classNames.tools}>
           <button
@@ -41,7 +37,7 @@ class Demo extends Component {
             }}
           >
            
-              <img src={Save}/>
+          <img src={Save}/>
           </button>
           <button
             style={{height: '230px', width : '240px'}}
@@ -93,7 +89,7 @@ class Demo extends Component {
             />
           </div>
           <div>
-            <label>Lazy-Radius:</label>
+            <label>Drag-Radius:</label>
             <input
               type="number"
               value={this.state.lazyRadius}
@@ -135,19 +131,7 @@ class Demo extends Component {
           ref={canvasDraw => (this.loadableCanvas = canvasDraw)}
           saveData={localStorage.getItem("savedDrawing")}
         />
-        <p>
-          The saving & loading also takes different dimensions into account.
-          Change the width & height, draw something and save it and then load it
-          into the disabled canvas. It will load your previously saved
-          masterpiece scaled to the current canvas dimensions.
-        </p>
-        <p>
-          That's it for now! Take a look at the{" "}
-          <a href="https://github.com/mBeierl/react-canvas-draw/tree/master/demo/src">
-            source code of these examples
-          </a>
-          .
-        </p>
+     
       </div>
     );
   }
