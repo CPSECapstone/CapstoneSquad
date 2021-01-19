@@ -8,7 +8,10 @@ import text from './text.jpg'
 import draw from './draw.jpg'
 import highlight from './highlight.jpg'
 import erase from './erase.jpg'
+import * as Realm from "realm-web";
 
+const REALM_APP_ID = "<application-0-waikr>"; // e.g. myapp-abcde
+const app = new Realm.App({ id: REALM_APP_ID });
 
 const Button = styled.button``;
 
@@ -20,11 +23,31 @@ const ButtonToggle = styled(Button)`
 
 const ButtonGroup = styled.div` `;
 
+// Create a component that displays the given user's details
+function UserDetail({ user }) {
+  return (
+    <div>
+      <h1>Logged in with anonymous id: {user.id}</h1>
+    </div>
+  );
+}
+
+// Create a component that lets an anonymous user log in
+function Login({ setUser }) {
+  const loginAnonymous = async () => {
+    const user = await app.logIn(Realm.Credentials.anonymous());
+    setUser(user);
+  };
+  return <button onClick={loginAnonymous}>Log In</button>;
+}
 
 function App() {
  
   return (
     <div className="App">
+      <div className="App-header">
+        {user ? <UserDetail user={user} /> : <Login setUser={setUser} />}
+      </div>
      
       <header className="App-TopButton"> 
         <ButtonGroup> 
