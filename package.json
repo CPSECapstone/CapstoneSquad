@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "realm-web": "^1.2.0"
+  },
+  "devDependencies": {
+    "cypress": "^6.2.1"
+  }
+}
