@@ -42,6 +42,8 @@ function Login({ setUser }) {
 }
 
 function App() {
+
+  const [user, setUser] = React.useState(app.currentUser);
  
   return (
     <div className="App">
