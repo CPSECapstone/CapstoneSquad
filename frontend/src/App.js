@@ -10,7 +10,7 @@ import highlight from './highlight.jpg'
 import erase from './erase.jpg'
 import * as Realm from "realm-web";
 
-const REALM_APP_ID = "<application-0-waikr>"; // e.g. myapp-abcde
+const REALM_APP_ID = "application-0-waikr"; // e.g. myapp-abcde
 const app = new Realm.App({ id: REALM_APP_ID });
 
 const Button = styled.button``;
