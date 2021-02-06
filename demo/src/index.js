@@ -1,4 +1,3 @@
-{/* From the Canvas API */}
 import React, { Component } from "react";
 import { render } from "react-dom";
 import Scholarship from './Scholarship.jpg';
