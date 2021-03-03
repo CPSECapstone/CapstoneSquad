@@ -26,7 +26,7 @@ class InitialState extends Component {
           <p>Try it out! Draw something, hit "Save" and then "Load".</p>
           <div className={classNames.tools}>
             <button
-              style={{height: '230px', width : '240px'}}
+              style={{height: '100px', width : '100px'}}
               onClick={() => {
                 localStorage.setItem(
                   "savedDrawing",
@@ -34,27 +34,29 @@ class InitialState extends Component {
                 );
               }}
             >
-             
-            <img src={Save} alt ="Save Button"/>
+              <img src={Save} height='90' alt ="Save Button"/>
             </button>
+
             <button
-              style={{height: '230px', width : '240px'}}
+              style={{height: '100px', width : '100px'}}
               onClick={() => {
                 this.saveableCanvas.clear();
               }}
   
             >
-              <img src={Clear} alt = "Clear Button"/>
+              <img src={Clear} height='90' alt = "Clear Button"/>
             </button>
+
             <button
-              style={{height: '230px', width : '240px'}}
+              style={{height: '100px', width : '100px'}}
               onClick={() => {
                 this.saveableCanvas.undo();
               }}
               Clear
             >
-               <img src={Undo} alt = "Undo Button"/>
+               <img src={Undo} height='90' width='90' alt = "Undo Button"/>
             </button>
+
              {/*
             <div>
               <label>Width:</label>
