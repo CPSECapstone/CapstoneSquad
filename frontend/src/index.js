@@ -10,7 +10,7 @@ import CanvasDraw from "react-canvas-draw";
 
 class InitialState extends Component {
     state = {
-      color: "#237d16",
+      color: "#000000",
       width: 400,
       height: 400,
       brushRadius: 5,
@@ -36,6 +36,7 @@ class InitialState extends Component {
             >
              
             <img src={Save} alt ="Save Button"/>
+
             </button>
             <button
               style={{height: '230px', width : '240px'}}
@@ -46,6 +47,7 @@ class InitialState extends Component {
             >
               <img src={Clear} alt = "Clear Button"/>
             </button>
+
             <button
               style={{height: '230px', width : '240px'}}
               onClick={() => {
@@ -55,6 +57,7 @@ class InitialState extends Component {
             >
                <img src={Undo} alt = "Undo Button"/>
             </button>
+
              {/*
             <div>
               <label>Width:</label>
@@ -103,6 +106,20 @@ class InitialState extends Component {
                 }
               />
             </div>
+
+            <form>
+
+               <label for="colorpicker">Color Picker:</label>
+               <input
+                  id="brushColorPicker"
+                  type="color"
+                  onChange={e =>
+                    this.setState({ color: e.target.value })
+                    }
+               />
+
+            </form>
+
           </div>
           <CanvasDraw
             imgSrc={Scholarship}
