@@ -23,10 +23,10 @@ class InitialState extends Component {
          
           <h2>Scholarship Annotator</h2>
          
-          <p>Try it out! Draw something, hit "Save" and then "Load".</p>
+          <p id="p1">Try it out! Draw something, hit "Save" and then "Load".</p>
           <div className={classNames.tools}>
             <button
-              style={{height: '100px', width : '100px'}}
+              style={{height: '50px', width : '50px'}}
               onClick={() => {
                 localStorage.setItem(
                   "savedDrawing",
@@ -34,27 +34,27 @@ class InitialState extends Component {
                 );
               }}
             >
-              <img src={Save} height='90' alt ="Save Button"/>
+              <img src={Save} height='40' alt ="Save Button"/>
             </button>
 
             <button
-              style={{height: '100px', width : '100px'}}
+              style={{height: '50px', width : '50px'}}
               onClick={() => {
                 this.saveableCanvas.clear();
               }}
   
             >
-              <img src={Clear} height='90' alt = "Clear Button"/>
+              <img src={Clear} height='40' alt = "Clear Button"/>
             </button>
 
             <button
-              style={{height: '100px', width : '100px'}}
+              style={{height: '50px', width : '50px'}}
               onClick={() => {
                 this.saveableCanvas.undo();
               }}
               Clear
             >
-               <img src={Undo} height='90' width='90' alt = "Undo Button"/>
+               <img src={Undo} height='40' width='40' alt = "Undo Button"/>
             </button>
 
              {/*
