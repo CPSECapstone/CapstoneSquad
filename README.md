@@ -14,6 +14,7 @@ Built using:
    
 To run the project:
    > `flask run`
+   > 
    > `npm start`
 3. Install the Cypress Frontend testing framework:
    > `npm install cypress --save-dev`
