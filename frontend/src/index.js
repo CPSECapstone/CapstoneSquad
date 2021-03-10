@@ -22,9 +22,19 @@ class InitialState extends Component {
         <div>
          
           <h2>Scholarship Annotator</h2>
-         
+
           <p id="p1">Try it out! Draw something, hit "Save" and then "Load".</p>
-          <div className={classNames.tools}>
+          <div class="buttons" className={classNames.tools}>
+            <CanvasDraw
+              imgSrc={Scholarship}
+              ref={canvasDraw => (this.saveableCanvas = canvasDraw)}
+              brushColor={this.state.color}
+              brushRadius={this.state.brushRadius}
+              lazyRadius={this.state.lazyRadius}
+              canvasWidth={this.state.width}
+              canvasHeight={this.state.height}
+              
+            />
             <button
               style={{height: '50px', width : '50px'}}
               onClick={() => {
@@ -83,8 +93,6 @@ class InitialState extends Component {
             */}
             
             
-
-
             <div>
               <label>Brush-Radius:</label>
               <input
@@ -106,39 +114,33 @@ class InitialState extends Component {
               />
             </div>
           </div>
-          <CanvasDraw
-            imgSrc={Scholarship}
-            ref={canvasDraw => (this.saveableCanvas = canvasDraw)}
-            brushColor={this.state.color}
-            brushRadius={this.state.brushRadius}
-            lazyRadius={this.state.lazyRadius}
-            canvasWidth={this.state.width}
-            canvasHeight={this.state.height}
-            
-          />
+          
           <p>
             The following is a disabled canvas with a hidden grid that we use to
             load & show your saved drawing.
           </p>
-          <button
-            onClick={() => {
-              this.loadableCanvas.loadSaveData(
-                localStorage.getItem("savedDrawing")
-              );
-            }}
-          >
-            Load what you saved previously into the following canvas. Either by
-            calling `loadSaveData()` on the component's reference or passing it
-            the `saveData` prop:
-          </button>
-          <CanvasDraw
-            imgSrc={Scholarship}
-            disabled
-            hideGrid
-            ref={canvasDraw => (this.loadableCanvas = canvasDraw)}
-            saveData={localStorage.getItem("savedDrawing")}
-          />
-       
+          
+          <div class="save" className={classNames.tools}>
+            <button
+              style= {{order: 2, height: '100px', width: '300px'}}
+              onClick={() => {
+                this.loadableCanvas.loadSaveData(
+                  localStorage.getItem("savedDrawing")
+                );
+              }}
+            >
+              CLICK ME: Load what you saved previously into the following canvas. Either by
+              calling `loadSaveData()` on the component's reference or passing it
+              the `saveData` prop:
+            </button>
+            <CanvasDraw
+              imgSrc={Scholarship}
+              disabled
+              hideGrid
+              ref={canvasDraw => (this.loadableCanvas = canvasDraw)}
+              saveData={localStorage.getItem("savedDrawing")}
+            />
+          </div>
         </div>
       );
     }
