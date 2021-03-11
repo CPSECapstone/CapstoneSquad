@@ -16,6 +16,21 @@ class InitialState extends Component {
       brushRadius: 5,
       lazyRadius: 5
     };
+
+    constructor(props) {
+      super(props);
+      this.state = { backendResponse: "" };
+    }
+ 
+    callBackend() {
+        fetch("/test")
+            .then(res => res.text())
+            .then(res => this.setState({ backendResponse: res }));
+    }
+ 
+    componentWillMount() {
+        this.callBackend();
+    }
   
     render() {
       return (
@@ -118,6 +133,7 @@ class InitialState extends Component {
             The following is a disabled canvas with a hidden grid that we use to
             load & show your saved drawing.
           </p>
+          <p>{this.state.backendResponse}</p>
           <button
             onClick={() => {
               this.loadableCanvas.loadSaveData(
