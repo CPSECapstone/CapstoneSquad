@@ -146,9 +146,9 @@ class InitialState extends Component {
           </div>
           
           <p>
-            See you're saved template below!
+            See your saved template below!
           </p>
-          <p>{this.state.backendResponse}</p>
+          {/*<p>{this.state.backendResponse}</p>*/}
           <div class="save" className={classNames.tools}>
             <button
               style= {{order: 2, height: '100px', width: '300px'}}
