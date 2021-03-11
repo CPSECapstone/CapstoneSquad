@@ -37,6 +37,11 @@ p {
   max-height: 450%;
 }
 
+h2 {
+  text-align: center;
+  font-size:34px
+}
+
 
 
 input[type=number] {
