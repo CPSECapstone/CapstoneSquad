@@ -1,0 +1,23 @@
+{
+  "name": "capstonesquad",
+  "version": "1.0.0",
+  "description": "Cal Poly Senior Capstone project. Creating the digital annotation tool for Creative Works at the Kennedy Library.",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CPSECapstone/CapstoneSquad.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CPSECapstone/CapstoneSquad/issues"
+  },
+  "homepage": "https://github.com/CPSECapstone/CapstoneSquad#readme"
+}

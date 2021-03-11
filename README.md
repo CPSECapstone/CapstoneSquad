@@ -9,17 +9,21 @@ Built using:
 ## Packages to be Installed Before Pulling this Repo
 1. Install Node if not already installed:
    > `npm install`
+
+2. Install Flask if not already installed: https://flask.palletsprojects.com/en/1.1.x/installation/
    
 To run the project:
+   > `flask run`
+   > 
    > `npm start`
-2. Install the Cypress Frontend testing framework:
+3. Install the Cypress Frontend testing framework:
    > `npm install cypress --save-dev`
    
 To run Cypress testing:  
    > `npx cypress open`
 
 The frontend/client is being run on http://localhost:3000 
-The backend is the Express.js, being run on http://localhost:9000
+The Flask backend, must be ran simultaneously with the Frontend.
 
 Continuous Integration Server: https://travis-ci.com/github/CPSECapstone/CapstoneSquad/builds/205978389
 Please feel free to refer to our Technical Specifications for additional info and documentation on our project:

@@ -10,12 +10,27 @@ import CanvasDraw from "react-canvas-draw";
 
 class InitialState extends Component {
     state = {
-      color: "#237d16",
+      color: "#000000",
       width: 400,
       height: 400,
       brushRadius: 5,
       lazyRadius: 5
     };
+
+    constructor(props) {
+      super(props);
+      this.state = { backendResponse: "" };
+    }
+ 
+    callBackend() {
+        fetch("/test")
+            .then(res => res.text())
+            .then(res => this.setState({ backendResponse: res }));
+    }
+ 
+    componentWillMount() {
+        this.callBackend();
+    }
   
     render() {
       return (
@@ -45,6 +60,7 @@ class InitialState extends Component {
               }}
             >
               <img src={Save} height='40' alt ="Save Button"/>
+
             </button>
 
             <button
@@ -113,12 +129,26 @@ class InitialState extends Component {
                 }
               />
             </div>
+
+            <form>
+
+               <label for="colorpicker">Color Picker:</label>
+               <input
+                  id="brushColorPicker"
+                  type="color"
+                  onChange={e =>
+                    this.setState({ color: e.target.value })
+                    }
+               />
+
+            </form>
+
           </div>
           
           <p>
             See you're saved template below!
           </p>
-          
+          <p>{this.state.backendResponse}</p>
           <div class="save" className={classNames.tools}>
             <button
               style= {{order: 2, height: '100px', width: '300px'}}
