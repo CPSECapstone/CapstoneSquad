@@ -37,11 +37,21 @@ class InitialState extends Component {
         <div>
          
           <h2>Scholarship Annotator</h2>
-         
-          <p>Try it out! Draw something, hit "Save" and then "Load".</p>
-          <div className={classNames.tools}>
+
+          <p id="p1">Try it out! Draw something, hit "Save" and then "Load".</p>
+          <div class="buttons" className={classNames.tools}>
+            <CanvasDraw
+              imgSrc={Scholarship}
+              ref={canvasDraw => (this.saveableCanvas = canvasDraw)}
+              brushColor={this.state.color}
+              brushRadius={this.state.brushRadius}
+              lazyRadius={this.state.lazyRadius}
+              canvasWidth={this.state.width}
+              canvasHeight={this.state.height}
+              
+            />
             <button
-              style={{height: '230px', width : '240px'}}
+              style={{height: '50px', width : '50px'}}
               onClick={() => {
                 localStorage.setItem(
                   "savedDrawing",
@@ -49,28 +59,28 @@ class InitialState extends Component {
                 );
               }}
             >
-             
-            <img src={Save} alt ="Save Button"/>
+              <img src={Save} height='40' alt ="Save Button"/>
 
             </button>
+
             <button
-              style={{height: '230px', width : '240px'}}
+              style={{height: '50px', width : '50px'}}
               onClick={() => {
                 this.saveableCanvas.clear();
               }}
   
             >
-              <img src={Clear} alt = "Clear Button"/>
+              <img src={Clear} height='40' alt = "Clear Button"/>
             </button>
 
             <button
-              style={{height: '230px', width : '240px'}}
+              style={{height: '50px', width : '50px'}}
               onClick={() => {
                 this.saveableCanvas.undo();
               }}
               Clear
             >
-               <img src={Undo} alt = "Undo Button"/>
+               <img src={Undo} height='40' width='40' alt = "Undo Button"/>
             </button>
 
              {/*
@@ -99,8 +109,6 @@ class InitialState extends Component {
             */}
             
             
-
-
             <div>
               <label>Brush-Radius:</label>
               <input
@@ -136,40 +144,30 @@ class InitialState extends Component {
             </form>
 
           </div>
-          <CanvasDraw
-            imgSrc={Scholarship}
-            ref={canvasDraw => (this.saveableCanvas = canvasDraw)}
-            brushColor={this.state.color}
-            brushRadius={this.state.brushRadius}
-            lazyRadius={this.state.lazyRadius}
-            canvasWidth={this.state.width}
-            canvasHeight={this.state.height}
-            
-          />
+          
           <p>
-            The following is a disabled canvas with a hidden grid that we use to
-            load & show your saved drawing.
+            See your saved template below!
           </p>
-          <p>{this.state.backendResponse}</p>
-          <button
-            onClick={() => {
-              this.loadableCanvas.loadSaveData(
-                localStorage.getItem("savedDrawing")
-              );
-            }}
-          >
-            Load what you saved previously into the following canvas. Either by
-            calling `loadSaveData()` on the component's reference or passing it
-            the `saveData` prop:
-          </button>
-          <CanvasDraw
-            imgSrc={Scholarship}
-            disabled
-            hideGrid
-            ref={canvasDraw => (this.loadableCanvas = canvasDraw)}
-            saveData={localStorage.getItem("savedDrawing")}
-          />
-       
+          {/*<p>{this.state.backendResponse}</p>*/}
+          <div class="save" className={classNames.tools}>
+            <button
+              style= {{order: 2, height: '100px', width: '300px'}}
+              onClick={() => {
+                this.loadableCanvas.loadSaveData(
+                  localStorage.getItem("savedDrawing")
+                );
+              }}
+            >
+              CLICK ME! To see your saved changes.
+            </button>
+            <CanvasDraw
+              imgSrc={Scholarship}
+              disabled
+              hideGrid
+              ref={canvasDraw => (this.loadableCanvas = canvasDraw)}
+              saveData={localStorage.getItem("savedDrawing")}
+            />
+          </div>
         </div>
       );
     }

@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-image: linear-gradient(110deg,, #6d47d9);
+  background-image: linear-gradient(110deg, #6d47d9);
   margin: 50px;
   background-position: fixed;
 }
@@ -26,23 +26,60 @@ span {
   font-family: monospace;
 }
 
-p {
-  line-height: 1.6em;
-}
-
-.tools {
-  display: flex;
-  justify-content: space-between;
-  width: 1400px;
-  max-height: 450%;
-}
-
 h2 {
-  text-align: center;
-  font-size:34px
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 0.6em;
+  margin-left: 0;
+  margin-right: 0;
+  line-height: 1.6em;
+  border: 3px solid black;
+  border-color: black;
+  border-collapse: separate;
 }
 
+p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  line-height: 1.6em;
+  text-decoration: underline;
+}
 
+/*div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}*/
+
+/*button {
+  display: flex;
+  flex-direction: ;
+  align-items: center;
+}*/
+
+.buttons { /*I don't think this is doing anything*/
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: flex-start;
+  /*width: 1400px;
+  max-height: 100%;*/
+}
+
+.save { 
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /*width: 1400px;
+  max-height: 100%;*/
+}
 
 input[type=number] {
   width: 50px;
