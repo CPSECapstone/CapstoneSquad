@@ -116,8 +116,7 @@ class InitialState extends Component {
           </div>
           
           <p>
-            The following is a disabled canvas with a hidden grid that we use to
-            load & show your saved drawing.
+            See you're saved template below!
           </p>
           
           <div class="save" className={classNames.tools}>
@@ -129,9 +128,7 @@ class InitialState extends Component {
                 );
               }}
             >
-              CLICK ME: Load what you saved previously into the following canvas. Either by
-              calling `loadSaveData()` on the component's reference or passing it
-              the `saveData` prop:
+              CLICK ME! To see your saved changes.
             </button>
             <CanvasDraw
               imgSrc={Scholarship}
