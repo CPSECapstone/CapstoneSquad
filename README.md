@@ -35,5 +35,6 @@ Please feel free to refer to our Technical Specifications for additional info an
  The End-User-License-Agreement can be found at the following link:
  https://www.termsfeed.com/live/262f5fdc-039d-4690-8a01-7fa09d15e70a
  
- [Privacy Policy.pdf](https://github.com/CPSECapstone/CapstoneSquad/files/6314624/Privacy.Policy.pdf)
+A pdf to our privacy policy:
+[Privacy Policy.pdf](https://github.com/CPSECapstone/CapstoneSquad/files/6314624/Privacy.Policy.pdf)
 
