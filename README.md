@@ -31,3 +31,6 @@ Please feel free to refer to our Technical Specifications for additional info an
   
  To give feedback or report defects, please fill out form:
  https://docs.google.com/forms/d/e/1FAIpQLScYLNJzF3oYPEW5DJgMbg00iI3OXM9GEob9rFPq16DVSOEFNw/viewform?usp=sf_link
+ 
+ The End-User-License-Agreement can be found at the following link:
+ https://www.termsfeed.com/live/262f5fdc-039d-4690-8a01-7fa09d15e70a
