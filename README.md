@@ -28,3 +28,6 @@ The Flask backend, must be ran simultaneously with the Frontend.
 Continuous Integration Server: https://travis-ci.com/github/CPSECapstone/CapstoneSquad/builds/205978389
 Please feel free to refer to our Technical Specifications for additional info and documentation on our project:
   https://docs.google.com/document/d/1Brh3fRdmyI_avpSyhCPdjSwdAv435njQmiuDh6cIBwU/edit?usp=sharing
+  
+ To give feedback or report defects, please fill out form:
+ https://docs.google.com/forms/d/e/1FAIpQLScYLNJzF3oYPEW5DJgMbg00iI3OXM9GEob9rFPq16DVSOEFNw/viewform?usp=sf_link
