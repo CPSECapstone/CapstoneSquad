@@ -11,6 +11,7 @@
     "css-loader": "^3.6.0",
     "dotenv": "^8.2.0",
     "dotenv-expand": "^5.1.0",
+    "eject": "^0.0.4",
     "fs-extra": "^9.0.1",
     "postcss-flexbugs-fixes": "^4.2.1",
     "promise": "8.0.1",
@@ -20,6 +21,7 @@
     "react-canvas-draw": "^1.1.1",
     "react-dom": "^16.13.1",
     "react-frame-component": "^4.1.2",
+    "react-native-eject": "^0.1.2",
     "resolve": "^1.17.0",
     "whatwg-fetch": "3.2.0"
   },
@@ -29,7 +31,6 @@
     "test": "node scripts/test.js --env=jsdom",
     "watch": "npm-watch"
   },
-  
   "watch": {
     "build": {
       "patterns": [
@@ -79,17 +80,13 @@
       "@babel/preset-env",
       "@babel/preset-react"
     ],
-    "plugins":["@babel/plugin-proposal-class-properties"]
-    
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
-    
   },
-
-  
-  
-  
   "devDependencies": {
     "@babel/core": "^7.10.4",
     "@babel/plugin-transform-runtime": "^7.10.4",

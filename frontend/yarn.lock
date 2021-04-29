@@ -2071,6 +2071,11 @@ address@1.1.2, address@^1.0.1:
   resolved "https://registry.yarnpkg.com/address/-/address-1.1.2.tgz#bf1116c9c758c51b7a933d296b72c221ed9428b6"
   integrity sha512-aT6camzM4xEA54YVJYSqxz1kv4IHnQZRtThJJHhUMRExaU5spC7jX5ugSwTaTgJliIgs4VhZOk7htClvQ/LmRA==
 
+adhere@1.x:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/adhere/-/adhere-1.2.3.tgz#3719ac497758735c817381a756720be7ba0360a2"
+  integrity sha512-1ItBtLjSW2yNZ6gSaHeir5X3Om77u9H2iQuGoPMMHZMGpzTARRFMqPqr5Lz4LVMFWOBZO6U4P9GG7A8+j7n1pw==
+
 ajv-errors@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/ajv-errors/-/ajv-errors-1.0.1.tgz#f35986aceb91afadec4102fbd85014950cefa64d"
@@ -2969,6 +2974,11 @@ cache-base@^1.0.1:
     to-object-path "^0.3.0"
     union-value "^1.0.0"
     unset-value "^1.0.0"
+
+cadence@1.x:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/cadence/-/cadence-1.0.12.tgz#6e3bf71404c9f654f8ca31b1474f6fdfab63477a"
+  integrity sha512-9YJbhySTUaMBKz3IVcXbpw70K7swnBlD/LFY59zfwZ5U5sHXvZQUCCHSPdENdCKQ4XmN+GpFJrGF/yBZ73jMMw==
 
 call-me-maybe@^1.0.1:
   version "1.0.1"
@@ -4057,6 +4067,15 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
+
+eject@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/eject/-/eject-0.0.4.tgz#bad7c33522e63fe963ccb713d0cb0ee7a975d8fb"
+  integrity sha1-utfDNSLmP+ljzLcT0MsO56l12Ps=
+  dependencies:
+    adhere "1.x"
+    cadence "1.x"
+    interrupt "1.x"
 
 electron-to-chromium@^1.3.378, electron-to-chromium@^1.3.488:
   version "1.3.496"
@@ -5759,6 +5778,13 @@ interpret@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
   integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
+
+interrupt@1.x:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/interrupt/-/interrupt-1.2.0.tgz#8f8e0d0cfba190e74682e82d8f0439205a670209"
+  integrity sha1-j44NDPuhkOdGgugtjwQ5IFpnAgk=
+  dependencies:
+    supersede "1.x"
 
 invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
@@ -8614,6 +8640,11 @@ react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.9.0.tgz#21ca9561399aad0ff1a7701c01683e8ca981edcb"
   integrity sha512-tJBzzzIgnnRfEm046qRcURvwQnZVXmuCbscxUO5RWrGTXpon2d4c8mI0D8WE6ydVIm29JiLB6+RslkIvym9Rjw==
 
+react-native-eject@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/react-native-eject/-/react-native-eject-0.1.2.tgz#5824c332d092d845b1a77766c81023fa3c97bfd5"
+  integrity sha512-ITuAYOLMOiSXNAjWeucQPm5i6VVweuh/Zo2gfMFSCf1DjVrdOocWwy2kkg65ypbbt26tW6Vd3ZrqNRCsC9rqDA==
+
 react@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
@@ -9851,6 +9882,11 @@ style-loader@^1.2.1:
   dependencies:
     loader-utils "^2.0.0"
     schema-utils "^2.6.6"
+
+supersede@1.x:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/supersede/-/supersede-1.0.6.tgz#27ce9eaaf0b81e9ea31d7471c7aa4cb153f50065"
+  integrity sha512-68MKSJ+nGtjpQS7ckOvFiCydPY+2sz6iXmC3+/BkCqnaA/UtGOkcY2H5WOKZF9Xo5GUU+LK9ZfSzXVOre9H0rQ==
 
 supports-color@^2.0.0:
   version "2.0.0"
