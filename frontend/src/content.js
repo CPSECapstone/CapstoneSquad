@@ -33,6 +33,7 @@ class Main extends React.Component {
               canvasWidth={this.state.width}
               canvasHeight={this.state.height}
               hideGrid
+              backgroundColor ={"#0000ffff"}
             
              
               
