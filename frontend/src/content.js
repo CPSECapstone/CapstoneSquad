@@ -21,11 +21,11 @@ class Main extends React.Component {
         return (
           <div>
          
-          <h2>Scholarship Annotator</h2>
+   {/*  <h2>Scholarship Annotator</h2>
 
-          <p id="p1">Try it out! Draw something, hit "Save" and then "Load".</p>
+          <p id="p1">Try it out! Draw something, hit "Save" and then "Load".</p>*/}
           <div class="buttons" className={classNames.tools}>
-            <CanvasDraw
+            <CanvasDraw className="transparent"
               ref={canvasDraw => (this.saveableCanvas = canvasDraw)}
               brushColor={this.state.color}
               brushRadius={this.state.brushRadius}
@@ -33,7 +33,8 @@ class Main extends React.Component {
               canvasWidth={this.state.width}
               canvasHeight={this.state.height}
               hideGrid
-              backgroundColor ={"#0000ffff"}
+              backgroundColor ={"rgba(255, 0, 0, 0)"}
+              opacity={"0.50"}
             
              
               
@@ -133,9 +134,9 @@ class Main extends React.Component {
 
           </div>
           
-          <p>
-            See your saved template below!
-          </p>
+          {/*<p>
+            See your saved template below! 
+          </p>*/}
           {/*<p>{this.state.backendResponse}</p>*/}
           <div class="save" className={classNames.tools}>
             <button
@@ -150,6 +151,7 @@ class Main extends React.Component {
             </button>
             <CanvasDraw
               imgSrc={Scholarship}
+              backgroundColor ={"rgba(255, 0, 0, 0)"}
               disabled
               hideGrid
               ref={canvasDraw => (this.loadableCanvas = canvasDraw)}

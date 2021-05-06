@@ -63,6 +63,10 @@ p {
   text-decoration: underline;
 }
 
+CanvasDraw {
+  background: rgba(255, 0, 0, 0)
+}
+
 
 .save { 
   display: flex;

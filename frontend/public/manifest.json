@@ -3,10 +3,18 @@
 {
   "manifest_version": 2,
  
-  "name": "Modify CSS and HTML",
+  "name": "Capstone Squad Annotator",
   "version": "0.1.0",
-  "description": "Lateral blog post demo extension",
- 
+  "description": "For the Creative Works Department at Cal Poly SLO.",
+  "browser_action": {
+    "default_title": "Open the popup"
+  },
+  "icons": {
+    "16": "logo-small.png",
+    "48": "logo-small.png",
+    "128": "logo-small.png"
+  },
+
   "content_scripts": [{
     "css": ["/css/root.css"],
     "js": ["/static/js/content.js"],
