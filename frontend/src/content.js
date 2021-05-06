@@ -11,7 +11,7 @@ import CanvasDraw from "react-canvas-draw";
 
 class Main extends React.Component {
   state = {
-    color: "#000000",
+    color: "#RRGGBBAA",
     width: 400,
     height: 400,
     brushRadius: 5,
@@ -20,7 +20,7 @@ class Main extends React.Component {
     render() {
         return (
             <CanvasDraw
-            imgSrc={Scholarship}
+           
             />
         )
     }
