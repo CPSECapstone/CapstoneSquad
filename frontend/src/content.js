@@ -20,7 +20,8 @@ class Main extends React.Component {
     render() {
         return (
           <div>
-         
+  
+  {/*A.J Before */}
    {/*  <h2>Scholarship Annotator</h2>
 
           <p id="p1">Try it out! Draw something, hit "Save" and then "Load".</p>*/}
