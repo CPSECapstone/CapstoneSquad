@@ -23,7 +23,7 @@ class Main extends React.Component {
         return (
           
           <div>
-            {/*A.J After */}
+            {/*A.J After Sprout Method*/}
             <Annotator/>
             <Saved/>
             
