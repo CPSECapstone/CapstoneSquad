@@ -1,0 +1,109 @@
+.TextBackground {
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    border-radius: 17.5px;
+    margin: 10px 0px;
+    padding: 5px;
+    /* border: 0px none;
+    font-family: Helvetica;
+    font-size: 18px;
+    color: #2D2D30;
+    letter-spacing: -0.09px;
+    line-height: 26px;
+    margin: 10px 0px;
+    border-bottom: 3px solid#d8d8d8;
+    width: 100%; */
+}
+
+
+.message {
+    height: 100px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    border-radius: 17.5px;
+    margin: 10px 0px;
+}
+
+input:focus~.edit {
+    opacity: 1 !important;
+}
+.close {
+    color: Black;
+    float: right;
+  }
+.ContactBox {
+    
+    background: #FFFFFF;
+border: 1px solid #979797;
+box-shadow: 0 2px 24px 0 rgba(94,92,92,0.40);
+border-radius: 36px;
+font-family: Helvetica;
+font-size: 35px;
+color: #FFFFFF;
+letter-spacing: 0;
+text-align: center;
+line-height: 24px;
+border: 3px solid #3F2D35;
+border: 3px solid #3F2D35;
+width: 40%;
+margin: 0px 28%;
+
+
+}
+
+ 
+
+
+
+
+
+
+.MessageBox {
+    background: #FFFFFF;
+    border: 5px solid #D8D8D8;
+    height: 250px;
+}
+
+
+
+.SubmitButton {
+    background: #0053FF;
+    border-radius: 24px;
+    font-family: Heebo-Bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px;
+    width: 40%;
+    margin: 0px 30%;
+    border-radius: 6px;
+    /* line-height: 24px;
+    box-sizing: border-box;
+    display: block;
+    width: 70%;
+    background-color: #0053ff;
+    color: white;
+    background: #0053FF;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 50px;
+    text-align: center; */
+}
+
+.close-icon {
+    content: 'x';
+    cursor: pointer;
+    position: relative;
+    color: black;
+    width: -100px;
+    top: -10px;
+    height: 25px;
+    /* border-radius: 50%; */
+    line-height: 20px;
+    text-align: right;
+    font-size: 20px;
+  }
+
+  

@@ -10,3 +10,116 @@
 .my-extension h1 {
    color: #000;
 }
+
+.BulletPoints {
+  font-family: Helvetica;
+  display: flex;
+  justify-content: flex-start;
+  letter-spacing: 0;
+  line-height: 68px;
+  border-radius: 17.5px;
+  margin: 5px 50px;
+  flex-direction: row;
+  width: -20%;
+  text-align: left;
+  gap: 240px;
+}
+
+.Header {
+  font-family: Helvetica;
+  font-size: 56px;
+  color: #3F2D35;
+  letter-spacing: 0;
+  line-height: 90px;
+  font-weight: normal;
+  text-align: left;
+  margin: 50px 200px;
+}
+
+.Subtitle {
+  font-family: Helvetica;
+  font-size: 40px;
+  color: #3F2D35;
+  letter-spacing: 0;
+  line-height: 68px;
+  font-weight: normal;
+  margin: 50px 200px;
+  text-align: left;
+}
+
+.close {
+  color: Black;
+  float: right;
+  margin: 0px 600px;
+}
+
+
+.Paragraph {
+  font-family: Helvetica;
+  font-size: 40px;
+  color: #3F2D35;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 68px;
+  text-align: left;
+  margin: 50px 200px;
+}
+
+.Blue {
+  font-family: Helvetica;
+  font-size: 40px;
+  color: #0053FF;
+  letter-spacing: 0;
+  line-height: 68px;
+}
+
+.RegisterButton {
+  background: #0053FF;
+  border-radius: 24px;
+  font-family: Helvetica-Bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 24px;
+  width: 10%;
+  margin: 50px 200px;
+  position: relative;
+  left: 20px;
+}
+
+.svg{
+  position:relative;
+  top:100px
+}
+
+/* Popup style */
+.popup-box {
+  position: fixed;
+  
+  width: 100%;
+  height: 30vh;
+  top: 50px;
+  left: 0;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.5);
+}
+.popup_inner {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+}

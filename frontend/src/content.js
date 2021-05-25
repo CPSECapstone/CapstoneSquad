@@ -8,6 +8,8 @@ import Undo from './Undo.jpg'
 import Clear from './Clear.jpg'
 import classNames from "./index.css";
 import CanvasDraw from "react-canvas-draw";
+import Register from './Register/Register.js';
+import SignIn from './SignIn/SignIn.js';
 
 class Main extends React.Component {
   state = {
@@ -17,13 +19,52 @@ class Main extends React.Component {
     brushRadius: 5,
     lazyRadius: 5,
   };
+  
+
+  state = {
+    seen: false,
+    showPopup: false
+  };
+
+  togglePop = () => {
+    this.setState({
+      seen: !this.state.seen,
+    });
+  };
+  togglePops = () => {
+    this.setState({
+      showPopup:!this.state.showPopup
+    });
+  };
     render() {
         return (
           <div>
-         
-   {/*  <h2>Scholarship Annotator</h2>
+            
+            {/*Register Button*/}
+            <div>
+            <div onClick={this.togglePop}>
+          <button className={'RegisterButton'}>Register</button>
+        </div>
+        {this.state.seen  && <Register
+         handleClose={this.togglePop}
+    />}
+    
+      </div>
 
-          <p id="p1">Try it out! Draw something, hit "Save" and then "Load".</p>*/}
+       {/*Sign-in Button*/}
+       <div>
+            <div onClick={this.togglePops}>
+          <button className={'RegisterButton'}>Sign-in</button>
+        </div>
+        {this.state.showPopup  && <SignIn
+         handleClose={this.togglePops}
+    />}
+    
+      </div>
+
+      
+         
+   
           <div class="buttons" className={classNames.tools}>
             <CanvasDraw className="transparent"
               ref={canvasDraw => (this.saveableCanvas = canvasDraw)}
