@@ -1,25 +1,24 @@
+
+
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "manifest_version": 2,
+ 
+  "name": "Capstone Squad Annotator",
+  "version": "0.1.0",
+  "description": "For the Creative Works Department at Cal Poly SLO.",
+  "browser_action": {
+    "default_title": "Open the popup"
+  },
+  "icons": {
+    "16": "logo-small.png",
+    "48": "logo-small.png",
+    "128": "logo-small.png"
+  },
+
+  "content_scripts": [{
+    "css": ["/css/root.css"],
+    "js": ["/static/js/content.js"],
+    "matches": ["<all_urls>"]
+  }]
+ 
 }
