@@ -21,7 +21,9 @@
     "react-canvas-draw": "^1.1.1",
     "react-dom": "^16.13.1",
     "react-frame-component": "^4.1.2",
+    "react-modal": "^3.13.1",
     "react-native-eject": "^0.1.2",
+    "reactjs-popup": "^2.0.4",
     "resolve": "^1.17.0",
     "whatwg-fetch": "3.2.0"
   },
